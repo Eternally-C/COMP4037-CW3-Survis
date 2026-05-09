@@ -1,14 +1,17 @@
-@misc{asai2023selfraglearningretrievegenerate,
-  title={Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection}, 
-  author={Akari Asai and Zeqiu Wu and Yizhong Wang and Avirup Sil and Hannaneh Hajishirzi},
-  year={2023},
-  eprint={2310.11511},
-  archivePrefix={arXiv},
-  primaryClass={cs.CL},
-  url={https://arxiv.org/abs/2310.11511}, 
+@misc{asai2024selfrag,
+  title = {Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection},
+  author = {Akari Asai and Zeqiu Wu and Yizhong Wang and Avirup Sil and Hannaneh Hajishirzi},
+  year = {2024},
+  eprint = {2310.11511},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CL},
+  doi = {10.48550/arXiv.2310.11511},
+  url = {https://arxiv.org/abs/2310.11511},
+  series = {ICLR '24},
+  keywords = {type:method, topic:retrieval-augmented-generation, topic:large-language-models, method:self-reflection, method:adaptive-retrieval, evaluation:open-domain-qa}
 }
 
-@inproceedings{10.1145/3613905.3650839,
+@inproceedings{hou2024myagent,
   author = {Hou, Yuki and Tamoto, Haruki and Miyashita, Homei},
   title = {"My agent understands me better": Integrating Dynamic Human-like Memory Recall and Consolidation in LLM-Based Agents},
   year = {2024},
@@ -21,44 +24,41 @@
   booktitle = {Extended Abstracts of the CHI Conference on Human Factors in Computing Systems},
   articleno = {7},
   numpages = {7},
-  keywords = {Intelligent Agents, Large Language Models, Memory Retrieval Models, User Experience, User Interface},
+  keywords = {type:architecture, topic:llm-agents, topic:long-term-memory, method:memory-recall, method:memory-consolidation, domain:human-ai-interaction},
   location = {Honolulu, HI, USA},
   series = {CHI EA '24}
 }
 
 @article{lewis2020retrieval,
-  title={Retrieval-augmented generation for knowledge-intensive nlp tasks},
-  author={Lewis, Patrick and Perez, Ethan and Piktus, Aleksandra and Petroni, Fabio and Karpukhin, Vladimir and Goyal, Naman and K{\"u}ttler, Heinrich and Lewis, Mike and Yih, Wen-tau and Rockt{\"a}schel, Tim and others},
-  journal={Advances in neural information processing systems},
-  volume={33},
+  title = {Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks},
+  author = {Lewis, Patrick and Perez, Ethan and Piktus, Aleksandra and Petroni, Fabio and Karpukhin, Vladimir and Goyal, Naman and K{\"u}ttler, Heinrich and Lewis, Mike and Yih, Wen-tau and Rockt{\"a}schel, Tim and Riedel, Sebastian and Kiela, Douwe},
+  journal = {Advances in Neural Information Processing Systems},
+  volume = {33},
   url = {https://discovery.ucl.ac.uk/id/eprint/10100504/},
-  pages={9459--9474},
-  year={2020}
+  pages = {9459--9474},
+  year = {2020},
+  series = {NeurIPS '20},
+  keywords = {type:method, topic:retrieval-augmented-generation, topic:knowledge-intensive-nlp, method:dense-retrieval, method:parametric-and-non-parametric-memory, evaluation:knowledge-intensive-tasks}
 }
 
-@inproceedings{mallen-etal-2023-trust,
-  title = "When Not to Trust Language Models: Investigating Effectiveness of Parametric and Non-Parametric Memories",
-  author = "Mallen, Alex  and
-    Asai, Akari  and
-    Zhong, Victor  and
-    Das, Rajarshi  and
-    Khashabi, Daniel  and
-    Hajishirzi, Hannaneh",
-  editor = "Rogers, Anna  and
-    Boyd-Graber, Jordan  and
-    Okazaki, Naoaki",
-  booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+@inproceedings{mallen2023whennot,
+  title = {When Not to Trust Language Models: Investigating Effectiveness of Parametric and Non-Parametric Memories},
+  author = {Mallen, Alex and Asai, Akari and Zhong, Victor and Das, Rajarshi and Khashabi, Daniel and Hajishirzi, Hannaneh},
+  editor = {Rogers, Anna and Boyd-Graber, Jordan and Okazaki, Naoaki},
+  booktitle = {Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)},
   month = jul,
-  year = "2023",
-  address = "Toronto, Canada",
-  publisher = "Association for Computational Linguistics",
-  url = "https://aclanthology.org/2023.acl-long.546/",
-  doi = "10.18653/v1/2023.acl-long.546",
-  pages = "9802--9822",
-  abstract = "Despite their impressive performance on diverse tasks, large language models (LMs) still struggle with tasks requiring rich world knowledge, implying the difficulty of encoding a wealth of world knowledge in their parameters. This paper aims to understand LMs' strengths and limitations in memorizing factual knowledge, by conducting large-scale knowledge probing experiments on two open-domain entity-centric QA datasets: PopQA, our new dataset with 14k questions about long-tail entities, and EntityQuestions, a widely used open-domain QA dataset. We find that LMs struggle with less popular factual knowledge, and that retrieval augmentation helps significantly in these cases. Scaling, on the other hand, mainly improves memorization of popular knowledge, and fails to appreciably improve memorization of factual knowledge in the tail. Based on those findings, we devise a new method for retrieval-augmentation that improves performance and reduces inference costs by only retrieving non-parametric memories when necessary."
+  year = {2023},
+  address = {Toronto, Canada},
+  publisher = {Association for Computational Linguistics},
+  url = {https://aclanthology.org/2023.acl-long.546/},
+  doi = {10.18653/v1/2023.acl-long.546},
+  pages = {9802--9822},
+  abstract = {Despite their impressive performance on diverse tasks, large language models (LMs) still struggle with tasks requiring rich world knowledge, implying the difficulty of encoding a wealth of world knowledge in their parameters. This paper aims to understand LMs' strengths and limitations in memorizing factual knowledge, by conducting large-scale knowledge probing experiments on two open-domain entity-centric QA datasets: PopQA, our new dataset with 14k questions about long-tail entities, and EntityQuestions, a widely used open-domain QA dataset. We find that LMs struggle with less popular factual knowledge, and that retrieval augmentation helps significantly in these cases. Scaling, on the other hand, mainly improves memorization of popular knowledge, and fails to appreciably improve memorization of factual knowledge in the tail. Based on those findings, we devise a new method for retrieval-augmentation that improves performance and reduces inference costs by only retrieving non-parametric memories when necessary.},
+  series = {ACL '23},
+  keywords = {type:evaluation, topic:parametric-memory, topic:non-parametric-memory, topic:retrieval-augmentation, method:knowledge-probing, evaluation:open-domain-qa}
 }
 
-@inproceedings{10.1145/3586183.3606763,
+@inproceedings{park2023generativeagents,
   author = {Park, Joon Sung and O'Brien, Joseph and Cai, Carrie Jun and Morris, Meredith Ringel and Liang, Percy and Bernstein, Michael S.},
   title = {Generative Agents: Interactive Simulacra of Human Behavior},
   year = {2023},
@@ -71,44 +71,53 @@
   booktitle = {Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology},
   articleno = {2},
   numpages = {22},
-  keywords = {Human-AI interaction, agents, generative AI, large language models},
+  keywords = {type:system, topic:generative-agents, topic:agent-memory, topic:human-behavior-simulation, domain:human-ai-interaction, method:memory-reflection-planning},
   location = {San Francisco, CA, USA},
   series = {UIST '23}
 }
 
-@inproceedings{NEURIPS2023_1b44b878,
- author = {Shinn, Noah and Cassano, Federico and Gopinath, Ashwin and Narasimhan, Karthik and Yao, Shunyu},
- booktitle = {Advances in Neural Information Processing Systems},
- editor = {A. Oh and T. Naumann and A. Globerson and K. Saenko and M. Hardt and S. Levine},
- pages = {8634--8652},
- publisher = {Curran Associates, Inc.},
- title = {Reflexion: language agents with verbal reinforcement learning},
- url = {https://proceedings.neurips.cc/paper_files/paper/2023/file/1b44b878bb782e6954cd888628510e90-Paper-Conference.pdf},
- volume = {36},
- year = {2023}
+@inproceedings{shinn2023reflexion,
+  author = {Shinn, Noah and Cassano, Federico and Gopinath, Ashwin and Narasimhan, Karthik and Yao, Shunyu},
+  booktitle = {Advances in Neural Information Processing Systems},
+  editor = {Oh, A. and Naumann, T. and Globerson, A. and Saenko, K. and Hardt, M. and Levine, S.},
+  pages = {8634--8652},
+  publisher = {Curran Associates, Inc.},
+  title = {Reflexion: Language Agents with Verbal Reinforcement Learning},
+  doi = {10.52202/075280-0377},
+  url = {https://proceedings.neurips.cc/paper_files/paper/2023/file/1b44b878bb782e6954cd888628510e90-Paper-Conference.pdf},
+  volume = {36},
+  year = {2023},
+  series = {NeurIPS '23},
+  keywords = {type:agent-learning, topic:language-agents, topic:episodic-memory, method:verbal-reinforcement-learning, method:self-reflection, evaluation:task-performance}
 }
 
-@misc{singh2026agenticretrievalaugmentedgenerationsurvey,
-  title={Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG}, 
-  author={Aditi Singh and Abul Ehtesham and Saket Kumar and Tala Talaei Khoei and Athanasios V. Vasilakos},
-  year={2026},
-  eprint={2501.09136},
-  archivePrefix={arXiv},
-  primaryClass={cs.AI},
-  url={https://arxiv.org/abs/2501.09136}, 
+@misc{singh2025agenticrag,
+  title = {Agentic Retrieval-Augmented Generation: A Survey on Agentic RAG},
+  author = {Aditi Singh and Abul Ehtesham and Saket Kumar and Tala Talaei Khoei},
+  year = {2025},
+  eprint = {2501.09136},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.AI},
+  doi = {10.48550/arXiv.2501.09136},
+  url = {https://arxiv.org/abs/2501.09136},
+  series = {arXiv '25},
+  keywords = {type:survey, topic:agentic-rag, topic:retrieval-augmented-generation, topic:large-language-models, method:literature-survey, scope:agentic-systems}
 }
 
-@misc{sumers2024cognitivearchitectureslanguageagents,
-  title={Cognitive Architectures for Language Agents}, 
-  author={Theodore R. Sumers and Shunyu Yao and Karthik Narasimhan and Thomas L. Griffiths},
-  year={2024},
-  eprint={2309.02427},
-  archivePrefix={arXiv},
-  primaryClass={cs.AI},
-  url={https://arxiv.org/abs/2309.02427}, 
+@misc{sumers2024cognitivearchitectures,
+  title = {Cognitive Architectures for Language Agents},
+  author = {Theodore R. Sumers and Shunyu Yao and Karthik Narasimhan and Thomas L. Griffiths},
+  year = {2024},
+  eprint = {2309.02427},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.AI},
+  doi = {10.48550/arXiv.2309.02427},
+  url = {https://arxiv.org/abs/2309.02427},
+  series = {TMLR '24},
+  keywords = {type:cognitive-architecture, topic:language-agents, topic:cognitive-architecture, topic:memory-and-planning, method:conceptual-framework, scope:agent-architecture}
 }
 
-@article{10.1145/3748302,
+@article{zhang2025memorymechanism,
   author = {Zhang, Zeyu and Dai, Quanyu and Bo, Xiaohe and Ma, Chen and Li, Rui and Chen, Xu and Zhu, Jieming and Dong, Zhenhua and Wen, Ji-Rong},
   title = {A Survey on the Memory Mechanism of Large Language Model-based Agents},
   year = {2025},
@@ -121,23 +130,26 @@
   url = {https://doi.org/10.1145/3748302},
   doi = {10.1145/3748302},
   abstract = {Large language model (LLM)-based agents have recently attracted much attention from the research and industry communities. Compared with original LLMs, LLM-based agents are featured in their self-evolving capability, which is the basis for solving real-world problems that need long-term and complex agent-environment interactions. The key component to support agent-environment interactions is the memory of the agents. While previous studies have proposed many promising memory mechanisms, they are scattered in different papers, and there lacks a systematical review to summarize and compare these works from a holistic perspective, failing to abstract common and effective designing patterns for inspiring future studies. To bridge this gap, in this article, we propose a comprehensive survey on the memory mechanism of LLM-based agents. In specific, we first discuss “what is” and “why do we need” the memory in LLM-based agents. Then, we systematically review previous studies on how to design and evaluate the memory module. In addition, we also present many agent applications, where the memory module plays an important role. At last, we analyze the limitations of existing work and show important future directions. To keep up with the latest advances in this field, we create a repository at .},
-  journal = {ACM Trans. Inf. Syst.},
+  journal = {ACM Transactions on Information Systems},
   month = sep,
   articleno = {155},
   numpages = {47},
-  keywords = {Information Processing, Information System, Large Language Model, Agent, Memory Mechanism}
+  series = {ACM TOIS '25},
+  keywords = {type:survey, topic:llm-agents, topic:memory-mechanism, topic:long-term-memory, method:literature-survey, scope:memory-taxonomy}
 }
 
-@article{Zhong_Guo_Gao_Ye_Wang_2024,
-  title={MemoryBank: Enhancing Large Language Models with Long-Term Memory},
-  volume={38},
-  url={https://ojs.aaai.org/index.php/AAAI/article/view/29946},
-  DOI={10.1609/aaai.v38i17.29946},
-  abstractNote={Large Language Models (LLMs) have drastically reshaped our interactions with artificial intelligence (AI) systems, showcasing impressive performance across an extensive array of tasks. Despite this, a notable hindrance remains—the deficiency of a long-term memory mechanism within these models. This shortfall becomes increasingly evident in situations demanding sustained interaction, such as personal companion systems, psychological counseling, and secretarial assistance. Recognizing the necessity for long-term memory, we propose MemoryBank, a novel memory mechanism tailored for LLMs. MemoryBank enables the models to summon relevant memories, continually evolve through continuous memory updates, comprehend, and adapt to a user’s personality over time by synthesizing information from previous interactions. To mimic anthropomorphic behaviors and selectively preserve memory, MemoryBank incorporates a memory updating mechanism, inspired by the Ebbinghaus Forgetting Curve theory. This mechanism permits the AI to forget and reinforce memory based on time elapsed and the relative significance of the memory, thereby offering a more human-like memory mechanism and enriched user experience. MemoryBank is versatile in accommodating both closed-source models like ChatGPT and open-source models such as ChatGLM. To validate MemoryBank’s effectiveness, we exemplify its application through the creation of an LLM-based chatbot named SiliconFriend in a long-term AI Companion scenario. Further tuned with psychological dialog data, SiliconFriend displays heightened empathy and discernment in its interactions. Experiment involves both qualitative analysis with real-world user dialogs and quantitative analysis with simulated dialogs. In the latter, ChatGPT acts as multiple users with diverse characteristics and generates long-term dialog contexts covering a wide array of topics. The results of our analysis reveal that SiliconFriend, equipped with MemoryBank, exhibits a strong capability for long-term companionship as it can provide emphatic response, recall relevant memories and understand user personality.},
-  number={17},
-  journal={Proceedings of the AAAI Conference on Artificial Intelligence},
-  author={Zhong, Wanjun and Guo, Lianghong and Gao, Qiqi and Ye, He and Wang, Yanlin},
-  year={2024},
-  month={Mar.},
-  pages={19724–19731}
+@article{zhong2024memorybank,
+  title = {MemoryBank: Enhancing Large Language Models with Long-Term Memory},
+  volume = {38},
+  url = {https://ojs.aaai.org/index.php/AAAI/article/view/29946},
+  doi = {10.1609/aaai.v38i17.29946},
+  abstractNote = {Large Language Models (LLMs) have drastically reshaped our interactions with artificial intelligence (AI) systems, showcasing impressive performance across an extensive array of tasks. Despite this, a notable hindrance remains—the deficiency of a long-term memory mechanism within these models. This shortfall becomes increasingly evident in situations demanding sustained interaction, such as personal companion systems, psychological counseling, and secretarial assistance. Recognizing the necessity for long-term memory, we propose MemoryBank, a novel memory mechanism tailored for LLMs. MemoryBank enables the models to summon relevant memories, continually evolve through continuous memory updates, comprehend, and adapt to a user’s personality over time by synthesizing information from previous interactions. To mimic anthropomorphic behaviors and selectively preserve memory, MemoryBank incorporates a memory updating mechanism, inspired by the Ebbinghaus Forgetting Curve theory. This mechanism permits the AI to forget and reinforce memory based on time elapsed and the relative significance of the memory, thereby offering a more human-like memory mechanism and enriched user experience. MemoryBank is versatile in accommodating both closed-source models like ChatGPT and open-source models such as ChatGLM. To validate MemoryBank’s effectiveness, we exemplify its application through the creation of an LLM-based chatbot named SiliconFriend in a long-term AI Companion scenario. Further tuned with psychological dialog data, SiliconFriend displays heightened empathy and discernment in its interactions. Experiment involves both qualitative analysis with real-world user dialogs and quantitative analysis with simulated dialogs. In the latter, ChatGPT acts as multiple users with diverse characteristics and generates long-term dialog contexts covering a wide array of topics. The results of our analysis reveal that SiliconFriend, equipped with MemoryBank, exhibits a strong capability for long-term companionship as it can provide emphatic response, recall relevant memories and understand user personality.},
+  number = {17},
+  journal = {Proceedings of the AAAI Conference on Artificial Intelligence},
+  author = {Zhong, Wanjun and Guo, Lianghong and Gao, Qiqi and Ye, He and Wang, Yanlin},
+  year = {2024},
+  month = {Mar.},
+  pages = {19724--19731},
+  series = {AAAI '24},
+  keywords = {type:memory-system, topic:large-language-models, topic:long-term-memory, topic:personalized-memory, method:memory-storage-retrieval, evaluation:qualitative-and-quantitative-analysis}
 }

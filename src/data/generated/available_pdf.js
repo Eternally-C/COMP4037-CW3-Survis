@@ -1,1 +1,1 @@
-define({availablePdf: []});
+define({availablePdf: ["zhang2025memorymechanism","sumers2024cognitivearchitectures","park2023generativeagents","asai2024selfrag","shinn2023reflexion","lewis2020retrieval","mallen2023whennot","singh2025agenticrag","zhong2024memorybank","hou2024myagent"]});
