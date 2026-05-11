@@ -32,13 +32,14 @@
     },
     "lewis2020retrieval": {
         "author": "Lewis, Patrick and Perez, Ethan and Piktus, Aleksandra and Petroni, Fabio and Karpukhin, Vladimir and Goyal, Naman and K{\\\"u}ttler, Heinrich and Lewis, Mike and Yih, Wen-tau and Rockt{\\\"a}schel, Tim and Riedel, Sebastian and Kiela, Douwe",
+        "doi": "10.48550/arXiv.2005.11401",
         "journal": "Advances in Neural Information Processing Systems",
         "keywords": "type:method, topic:retrieval-augmented-generation, topic:knowledge-intensive-nlp, method:dense-retrieval, method:parametric-and-non-parametric-memory, evaluation:knowledge-intensive-tasks",
         "pages": "9459--9474",
         "series": "NeurIPS '20",
         "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
         "type": "article",
-        "url": "https://discovery.ucl.ac.uk/id/eprint/10100504/",
+        "url": "https://doi.org/10.48550/arXiv.2005.11401",
         "volume": "33",
         "year": "2020"
     },
